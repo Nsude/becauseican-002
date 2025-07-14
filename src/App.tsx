@@ -1,17 +1,21 @@
 import ReactLenis, { type LenisRef } from 'lenis/react'
 import './App.css'
 import BigTexts from './components/BigTexts'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Products from './components/Products'
 import Showcase from './components/Showcase'
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const lenisRef = useRef<LenisRef>(null);
 
-   useEffect(() => {
+   useGSAP(() => {
     function update(time: number) {
       if (!lenisRef.current?.lenis) return;
       lenisRef.current.lenis.raf(time * 1000)
