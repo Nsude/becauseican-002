@@ -17,7 +17,7 @@ const ScrollText = ({text}: Props) => {
     if (!mainHeight) return;
     const translateFactor = mainHeight;
 
-    // initialise text positon to middle text
+    // initialise text positon to the last duplicated text
     gsap.set(texts.current, {y: `-${translateFactor}px`});
 
     gsap.to(texts.current, {
@@ -33,12 +33,8 @@ const ScrollText = ({text}: Props) => {
   }, {dependencies: [], scope: main});
 
   return (
-    <div ref={main} className={`
-      h-[13.3rem] xl:h-[15rem] 2xl:h-[19.4rem] w-full overflow-hidden
-      text-[13.3rem] xl:text-[15rem] 2xl:text-[19.4rem] text-center -tracking-[0.05ch]
-      uppercase`
-    }>
-      <div ref={texts} className="relative flex flex-col items-center justify-center">
+    <div ref={main} className={`h-[13.3rem] xl:h-[15rem] 2xl:h-[19.4rem] w-full overflow-hidden`}>
+      <div ref={texts} className="relative flex flex-col items-center justify-center text-[13.3rem] xl:text-[15rem] 2xl:text-[19.4rem] text-center -tracking-[0.05ch] uppercase">
         <h1>{text}</h1>
         <h1>{text}</h1>
       </div>
