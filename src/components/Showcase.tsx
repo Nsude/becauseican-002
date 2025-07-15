@@ -31,9 +31,9 @@ const Showcase = () => {
       scrollTrigger: {
         trigger: section.current,
         start: "top top",
-        end: "+=200%",
+        end: "+=150%",
         pin: section.current,
-        scrub: true
+        scrub: 0.5
       }
     })
     
@@ -51,8 +51,8 @@ const Showcase = () => {
           <img ref={image2} src="./assets/images/bg-image-2.png" alt="bg-image-2" className="object-cover w-full h-full will-change-transform" />
         </div>
         {/* image 3 */}
-        <div className="absolute w-[75%] top-1/2 left-1/2 -translate-1/2 z-2 overflow-hidden">
-          <img ref={image3} src="./assets/images/bg-image-3.png" alt="bg-image-3" className="object-cover w-full h-full will-change-transform" />
+        <div className="absolute w-[75%] aspect-video top-1/2 left-1/2 -translate-1/2 z-2 overflow-hidden">
+          <img ref={image3} src="./assets/images/interior.jpg" alt="bg-image-3" className="object-cover w-full h-full will-change-transform" />
         </div>
       </div>
       

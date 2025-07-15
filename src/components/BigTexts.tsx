@@ -4,11 +4,11 @@ import ScrollText from "./ScrollText";
 const BigTexts = () => {
   return (
     <section className="relative w-full h-full min-h-[120vh] flex flex-col justify-center items-center">
-      <ScrollText text="eye" capitalize={true} />
-      <ScrollText text="cre-eight" capitalize={true} />
-      <ScrollText text="bee" capitalize={true} />
-      <ScrollText text="cause" capitalize={true} />
-      <ScrollText text="eye-can" capitalize={true} />
+      <ScrollText text="eye" />
+      <ScrollText text="cre-eight" />
+      <ScrollText text="bee" />
+      <ScrollText text="cause" />
+      <ScrollText text="eye-can" />
     </section>
   )
 }
