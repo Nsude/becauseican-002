@@ -15,7 +15,7 @@ const Showcase = () => {
 
     // parallax animation
     gsap.to(image1.current, {
-      yPercent: -10,
+      yPercent: 20,
       scrollTrigger: {
         trigger: section.current,
         start: "top bottom",
@@ -44,7 +44,7 @@ const Showcase = () => {
       <div>
         {/* image 1 */}
         <div className="absolute w-full h-full top-0 left-0 z-0 overflow-hidden">
-          <img ref={image1} src="./assets/images/bg-image-1.png" alt="bg-image-1" className="object-cover w-full h-[135%] will-change-transform" />
+          <img ref={image1} src="./assets/images/bg-image-1.png" alt="bg-image-1" className="object-cover translate-y-[-22%] w-full h-[135%] will-change-transform" />
         </div>
         {/* image 2 */}
         <div className="absolute w-[85%] top-1/2 left-1/2 -translate-1/2 z-1 overflow-hidden">
