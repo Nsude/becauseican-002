@@ -7,6 +7,7 @@ interface Props {
   trigger: HTMLElement | null;
   initialPosition?: number;
   delay?: number;
+  start?: string;
   children: ReactNode;
 }
 
@@ -15,6 +16,7 @@ const MoveOnScroll = ({
   trigger, 
   initialPosition,
   delay,
+  start = "top bottom",
   children
 } : Props) => {
   const main = useRef(null);
@@ -29,7 +31,7 @@ const MoveOnScroll = ({
       delay,
       scrollTrigger: {
         trigger,
-        start: "top bottom",
+        start,
         end: "bottom top",
         scrub: 0.5
       }

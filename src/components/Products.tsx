@@ -17,14 +17,17 @@ const Products = () => {
       {
         render ? (
           <>
-            <MoveOnScroll 
+            <MoveOnScroll
               targetPosition={-60}
               initialPosition={60}
               delay={0.4}
               trigger={main.current}
             >
               <div className="w-[20.5rem] h-[26rem] 2xl:w-[30rem] 2xl:h-[35rem]">
-                <DisplayImage src="./assets/images/interior-2.png" full={true} />
+                <DisplayImage
+                  src="./assets/images/interior-2.png"
+                  full={true}
+                  parallax={true} />
               </div>
             </MoveOnScroll>
 
@@ -32,20 +35,26 @@ const Products = () => {
               targetPosition={-45}
               initialPosition={40}
               delay={0.3}
-              trigger={main.current} 
+              trigger={main.current}
             >
               <div className="w-[20.5rem] h-[26rem] 2xl:w-[30rem] 2xl:h-[35rem]">
-                <DisplayImage src="./assets/images/fireplace.jpg" full={true} />
+                <DisplayImage
+                  src="./assets/images/fireplace.jpg"
+                  full={true}
+                  parallax={true} />
               </div>
             </MoveOnScroll>
 
-            <MoveOnScroll 
+            <MoveOnScroll
               targetPosition={-30}
               initialPosition={20}
               trigger={main.current}
             >
               <div className="w-[20.5rem] h-[26rem] 2xl:w-[30rem] 2xl:h-[35rem]">
-                <DisplayImage src="./assets/images/interior.jpg" full={true} />
+                <DisplayImage
+                  src="./assets/images/interior.jpg"
+                  full={true}
+                  parallax={true} />
               </div>
             </MoveOnScroll>
           </>

@@ -19,12 +19,12 @@ const Hero = () => {
     <section className="relative w-full h-screen flex justify-center items-center">
         {/* small image */}
         <div className="absolute w-[15rem] aspect-square left-[10%] xl:left-[12%] 2xl:left-[19%] top-[10%]">
-          <DisplayImage src="/assets/images/interior.jpg" full={true} />
+          <DisplayImage src="/assets/images/interior.jpg" full={true} parallax={true} />
         </div>
         
         {/* big image */}
         <div className="absolute w-[26.56rem] aspect-square z-1">
-          <DisplayImage src="/assets/images/fireplace.jpg" full={true} />
+          <DisplayImage src="/assets/images/fireplace.jpg" full={true} parallax={true} />
         </div>
 
         <div className="flex flex-col justify-center absolute z-5 top-[29%] right-[25%] gap-y-[0.3rem]">
