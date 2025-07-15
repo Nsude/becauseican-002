@@ -33,7 +33,7 @@ const MoveOnScroll = ({
         trigger,
         start,
         end: "bottom top",
-        scrub: 0.5
+        scrub: true
       }
     })
 

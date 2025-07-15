@@ -20,7 +20,7 @@ const Products = () => {
             <MoveOnScroll
               targetPosition={-60}
               initialPosition={60}
-              delay={0.4}
+              start="top 75%"
               trigger={main.current}
             >
               <div className="w-[20.5rem] h-[26rem] 2xl:w-[30rem] 2xl:h-[35rem]">
@@ -34,7 +34,7 @@ const Products = () => {
             <MoveOnScroll
               targetPosition={-45}
               initialPosition={40}
-              delay={0.3}
+              start="top 85%"
               trigger={main.current}
             >
               <div className="w-[20.5rem] h-[26rem] 2xl:w-[30rem] 2xl:h-[35rem]">
